@@ -47,6 +47,29 @@ python src/processors/enhanced_batch_processor.py
 python src/processors/batch_runner.py
 ```
 
+## 🗂️ 폴더 구조 요약
+
+프로젝트의 폴더 구조를 한눈에 볼 수 있는 유틸리티를 제공합니다.
+
+### 사용법
+
+```bash
+# Python 스크립트 직접 실행
+python src/folder_structure_summary.py --max-depth 3
+
+# 쉘 스크립트로 실행 (권장)
+./scripts/folder_summary.sh -d 2
+
+# 파일로 저장
+./scripts/folder_summary.sh -d 3 -o folder_structure.txt
+```
+
+### 옵션
+- `-d, --depth`: 최대 탐색 깊이 (기본값: 3)
+- `-p, --path`: 탐색할 경로 (기본값: 현재 프로젝트 루트)
+- `-o, --output`: 결과를 파일로 저장
+- `-h, --help`: 도움말 표시
+
 ## 📊 처리 모드별 특징
 
 ### Historical Mode (과거 데이터)
